@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<title>Spark SC Committee Information</title>
+		<meta name="description" content="Information on Spark SC committees for Spring 2015.">
+		<meta name="author" content="The Spark SC Team">
+		
+		<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+	<section class="all">
+		<section class="header">
+			<div class="container">
+				<div class="row">
+					<img src="img/letterhead-full.svg" alt="Spark SC">
+					<div class="title">Committee Information &middot; <span class="date">Spring 2015</span></div>
+				</div>
+			</div>
+		</section>
+		<section class="content">
+			<div class="container">
+				<div class="row">
+					<div class="information">
+						Spark SC Committees are your opportunity to get involved with the planning and execution of some of the largest events and initiatives on campus. We're looking for talented student leaders to join our team and help us do great things.
+						<a href="https://sparksc.typeform.com/to/EEb9iF"><button>Apply Here</button></a>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="status">
+						Open Committees
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="one-third column committee">
+						<h2>TechLA Internships</h2>
+						<p>Help connect students to internships in Los Angeles. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and promote Los Angeles as an entrepreneurial hub.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>TechLA Startup Career Fair</h2>
+						<p>Our flagship event in the spring semester, the TechLA Startup Career Fair, is bringing out top LA startups to connect with students in mid-February. Work on outreach and logistics to help strengthen USC’s connection to the startups in Los Angeles.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>LA Tech Tours</h2>
+						<p>This is your opportunity to get connected to the growing companies in Los Angeles –– reach out to founders, build relationships with them, and set up “field trips” all throughout the LA startup community.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="one-third column committee">
+						<h2>Hack Nights</h2>
+						<p>Our weekly Hack Nights need a new approach –– the new model for bringing together USC’s hackers and makers, and create something they can look forward to each week.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>Arts, Grooves, and Foods</h2>
+						<p>An event that seeks to facilitate innovative discussion and ignite the entrepreneurial aspirations of students from multiple disciplines. The event will promise thought provoking conversation, mouthwatering food, and soulful tunes. You will get to work on attracting the most interesting and creative entrepreneurs in the artistic, culinary, and musical fields.</p>	
+					</div>
+					<div class="one-third column committee">
+						<h2>Design Workshops</h2>
+						<p>TBD</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="one-third column committee">
+						<h2>Community Service Project</h2>
+						<p>Design and manage a social entrepreneurship project that engages with the larger Los Angeles community in collaboration with the organization No Right Brain Left Behind.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>Student Features</h2>
+						<p>Identify and showcase incredible USC students doing fascinating work on Spark SC’s social media.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>Spark SC Blog</h2>
+						<p>Create content that engages with our community and highlights the awesome students, groups, and initiatives under the Spark SC umbrella. We are shifting away from newsletters and to blog posts to keep our content relevant and exciting.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="one-third column committee">
+						<h2>Spark SC Marketing</h2>
+						<p>Create and spread Spark SC’s vision. Design marketing campaigns and promotions so that the whole campus can see what we’re up to and get involved. See your work plastered on builtins and event pages.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>Spark SC Media</h2>
+						<p>Spark SC has events that bring hundreds of students together and push USC’s entrepreneurial culture; yet, we have very little photo/video content to show for it. Help us capture the excitement by being in the “first class” of our media team through photography and videography.</p>
+					</div>
+					<div class="one-third column committee">
+						
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="status">
+						Closed Committees
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="one-third column committee">
+						<h2>Fellowship</h2>
+						<p>Help connect students to internships in Los Angeles. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and promote Los Angeles as an entrepreneurial hub.</p>
+					</div>
+					<div class="one-third column committee">
+						<h2>Recruitement</h2>
+						<p>Our flagship event in the spring semester, the TechLA Startup Career Fair, is bringing out top LA startups to connect with students in mid-February. Work on outreach and logistics to help strengthen USC’s connection to the startups in Los Angeles.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+		
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+		<script>
+			( function( $, window, document, undefined ) { // Resizes cards to the same height with respect to their rows.
+					'use strict';
+
+					var $list       = $( '.row' ),
+							$items      = $list.find( '.column' ),
+							setHeights  = function() {
+									$items.css( 'height', 'auto' );
+									var perRow = Math.floor( $list.width() / $items.width() );
+									if( perRow == null || perRow < 2 ) return true;
+									for( var i = 0, j = $items.length; i < j; i += perRow ) {
+											var maxHeight   = 0,
+													$row        = $items.slice( i, i + perRow );
+											$row.each( function() {
+													var itemHeight = parseInt( $( this ).outerHeight() );
+													if ( itemHeight > maxHeight ) maxHeight = itemHeight;
+											});
+											$row.css( 'height', maxHeight );
+									}
+							};
+
+					setHeights();
+					$( window ).on( 'resize', setHeights );
+
+			})( jQuery, window, document );
+			
+			$('.all').parallax({imageSrc: '/img/background.jpg'});
+		</script>
+	</body>
+</html>

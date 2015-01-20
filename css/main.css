@@ -1,0 +1,84 @@
+/*
+Spark SC Yellow: #FEBF0F;
+Typeform Yellow (button): rgb(253, 198, 59);
+Typeform Yellow (text): rgb(250, 208, 92);
+Typeform Gray: rgb(52, 52, 52);
+*/
+
+/* General */
+body {
+	background: rgb(52,52,52);
+}
+
+/* Header */
+.header {
+	height: 400px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #FEBF0F;
+	background: rgba(0,0,0,0.5);
+}
+.header>.container>.row {
+	text-align: center;
+}
+.header>.container>.row>img {
+	width: 400px;
+	max-width: 100%;
+	margin-top: 100px;
+}
+.header>.container>.row>.title {
+	margin-top: 50px;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+	color: white;
+}
+.header>.container>.row>.title>.date {
+	color: #FEBF0F;
+}
+
+
+/* Content */
+.information {
+	font-size: 2.2rem;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #FEBF0F;
+}
+.information>a {
+	margin-top: 20px;
+	display: block;
+	text-decoration: none;
+}
+.information>a>button {
+	border-color: #FEBF0F;
+	background: #FEBF0F;
+	color: #FFF;
+}
+.information>a>button:hover {
+	color: #EEE;
+}
+.information>hr {
+	width: 320px;
+	border: 0;
+	border-bottom: 1px solid #555;
+}
+
+.status {
+	margin-bottom: 36px;
+	font-size: 2.8rem;
+	color: white;
+}
+
+.committee {
+	margin-bottom: 40px;
+	padding: 30px 16px;
+	border-radius: 4px;
+	background: white;
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.25);
+}
+.committee>h2 {
+	font-size: 2rem;
+	color: #FEBF0F;
+}
+.committee>p {
+	color: black;
+}
