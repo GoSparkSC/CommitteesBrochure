@@ -36,7 +36,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="status">
-						Open Committees
+						<span class="open">Open</span> Committees
 					</div>
 				</div>
 			</div>
@@ -52,13 +52,13 @@
 					</div>
 					<div class="one-third column committee">
 						<h2>LA Tech Tours</h2>
-						<p>This is your opportunity to get connected to the growing companies in Los Angeles –– reach out to founders, build relationships with them, and set up “field trips” all throughout the LA startup community.</p>
+						<p>This is your opportunity to get connected to the growing tech scene in Los Angeles – reach out to founders, build relationships with companies, and set up "field trips" all throughout the LA startup community.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="one-third column committee">
 						<h2>Hack Nights</h2>
-						<p>Our weekly Hack Nights need a new approach –– the new model for bringing together USC’s hackers and makers, and create something they can look forward to each week.</p>
+						<p>Our weekly Hack Nights need a new approach – help us decide what that is. We're creating a new model for bringing together USC’s hackers and makers, and crafting an unique experience that they can look forward to each week.</p>
 					</div>
 					<div class="one-third column committee">
 						<h2>Arts, Grooves, and Foods</h2>
@@ -66,7 +66,7 @@
 					</div>
 					<div class="one-third column committee">
 						<h2>Design Workshops</h2>
-						<p>TBD</p>
+						<p>There's not much happening on campus that addresses the design community - we're looking to change that. Spark SC Design Workshops will take you through many key elements of the design process.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -75,12 +75,12 @@
 						<p>Design and manage a social entrepreneurship project that engages with the larger Los Angeles community in collaboration with the organization No Right Brain Left Behind.</p>
 					</div>
 					<div class="one-third column committee">
-						<h2>Student Features</h2>
-						<p>Identify and showcase incredible USC students doing fascinating work on Spark SC’s social media.</p>
+						<h2>Blog</h2>
+						<p>Create content that engages with our community and highlights the awesome students, groups, and initiatives under the Spark SC umbrella. We are shifting away from newsletters and to blog posts to keep our content relevant and exciting.</p>
 					</div>
 					<div class="one-third column committee">
-						<h2>Spark SC Blog</h2>
-						<p>Create content that engages with our community and highlights the awesome students, groups, and initiatives under the Spark SC umbrella. We are shifting away from newsletters and to blog posts to keep our content relevant and exciting.</p>
+						<h2>Student Features</h2>
+						<p>Identify and showcase incredible USC students doing fascinating work on Spark SC’s social media.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -90,29 +90,34 @@
 					</div>
 					<div class="one-third column committee">
 						<h2>Spark SC Media</h2>
-						<p>Spark SC has events that bring hundreds of students together and push USC’s entrepreneurial culture; yet, we have very little photo/video content to show for it. Help us capture the excitement by being in the “first class” of our media team through photography and videography.</p>
+						<p>Spark SC hosts events that bring hundreds of students together and promote a culture of entrepreneurship at USC. Help us capture the excitement by being in the "first class" of our media team through photography and videography.</p>
 					</div>
-					<div class="one-third column committee">
-						
+					<div class="one-third column committee" style="display: none">
+						<h2>BLANK</h2>
+						<p>BLANK</p>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="status">
-						Closed Committees
+						<span class="closed">Closed</span> Committees
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="one-third column committee">
-						<h2>Fellowship</h2>
-						<p>Help connect students to internships in Los Angeles. Build the TechLA brand, familiarize yourself with LA companies and recruiters, and promote Los Angeles as an entrepreneurial hub.</p>
+						<h2>Spark SC Fellowship</h2>
+						<p>Work hard, play hard. Help plan Spark SC team outings, retreats, and social events. You're the big mama/papa bears of the Spark SC family.</p>
 					</div>
 					<div class="one-third column committee">
-						<h2>Recruitement</h2>
-						<p>Our flagship event in the spring semester, the TechLA Startup Career Fair, is bringing out top LA startups to connect with students in mid-February. Work on outreach and logistics to help strengthen USC’s connection to the startups in Los Angeles.</p>
+						<h2>Spark SC Recruitement</h2>
+						<p>USC has one of the most motivated and talented student bodies in the world. Help us find smart people to do great things.</p>
+					</div>
+					<div class="one-third column committee" style="display: none">
+						<h2>BLANK</h2>
+						<p>BLANK</p>
 					</div>
 				</div>
 			</div>
@@ -140,6 +145,22 @@
 											});
 											$row.css( 'height', maxHeight );
 									}
+								
+									/*
+									$itemsTitle = $list.find( '.column>h2' ),
+									$itemsTitle.css( 'height', 'auto' );
+									var perRowTitle = Math.floor( $list.width() / $itemsTitle.width() );
+									if( perRowTitle == null || perRowTitle < 2 ) return true;
+									for( var i = 0, j = $itemsTitle.length; i < j; i += perRowTitle ) {
+											var maxHeightTitle   = 0,
+													$rowTitle        = $itemsTitle.slice( i, i + perRowTitle );
+											$rowTitle.each( function() {
+													var itemHeightTitle = parseInt( $( this ).outerHeight() );
+													if ( itemHeightTitle > maxHeightTitle ) maxHeightTitle = itemHeightTitle;
+											});
+											$rowTitle.css( 'height', maxHeightTitle );
+									}
+									*/
 							};
 
 					setHeights();
