@@ -56,6 +56,13 @@ body {
 .information>a>button:hover {
 	color: #EEE;
 }
+.information>.closed {
+	margin-top: 20px;
+	padding: 5px;
+	border: 1px solid white;
+	color: white;
+	text-transform: uppercase;
+}
 .information>hr {
 	width: 320px;
 	border: 0;
